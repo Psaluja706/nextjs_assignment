@@ -1,8 +1,8 @@
-import ExampleComponent from "@/ui/ExampleComponent";
+import HomePage from "@/ui/HomePage";
 
-const Home = () => {
+const Home = ({}) => {
   return (
-      <ExampleComponent />
+      <HomePage/>
   );
 };
 

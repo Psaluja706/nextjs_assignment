@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import StoreProvider from "@/lib/storeProvider";
+import PageWrapper from "@/ui/PageWrapper";
 
 export const metadata: Metadata = {
   title: "NextJS BoilerPlate",
@@ -15,8 +16,8 @@ export default function RootLayout({
   return (
     <StoreProvider>
       <html lang="en">
-        <body className={``}>
-          {children}
+        <body >
+          <PageWrapper>{children}</PageWrapper>
         </body>
       </html>
     </StoreProvider>
